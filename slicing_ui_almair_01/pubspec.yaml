@@ -1,0 +1,46 @@
+name: slicing_ui_almair_01
+description: "A new Flutter project."
+publish_to: "none"
+version: 0.1.0
+
+environment:
+  sdk: ^3.8.1
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/apple.png
+    - assets/arrow.png
+    - assets/burger.png
+    - assets/chat.png
+    - assets/delivery.jpg
+    - assets/fast food.png
+    - assets/card1.png
+    - assets/card2.png
+    - assets/home.png
+    - assets/kue kue.jpg
+    - assets/more.png
+    - assets/orange-juice.png
+    - assets/plus.png
+    - assets/promo.png
+    - assets/shopping-bag.png
+    - assets/store.png
+    - assets/vegetables.png
+    - assets/wallet.png
+    - assets/box1.png
+    - assets/box2.png
+    - assets/box3.png
+    - assets/box4.png
+    - assets/box5.png
+    - assets/box6.png
+    - assets/box7.png
+    - assets/box8.png
