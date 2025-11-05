@@ -1,6 +1,6 @@
 name: slicing_ui_almair_03
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -20,3 +20,8 @@ flutter:
   uses-material-design: true
   assets:
     - assets/hero.jpg
+    - assets/indo.png
+    - assets/coin.png
+    - assets/planTrip.png
+    - assets/promo1.png
+    - assets/promo2.png
