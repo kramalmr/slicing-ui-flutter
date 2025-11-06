@@ -12,7 +12,10 @@ class OptionMenu extends StatelessWidget {
       spacing: 5,
       mainAxisAlignment: MainAxisAlignment.center,
       children: [
-        Icon(icon, size: 25, color: Colors.blueAccent.shade700),
+        IconButton(
+          onPressed: () {},
+          icon: Icon(icon, size: 30, color: Colors.blueAccent.shade700),
+        ),
         Text(
           label,
           style: TextStyle(

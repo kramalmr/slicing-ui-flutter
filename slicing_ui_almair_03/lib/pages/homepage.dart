@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lucide_icons_flutter/lucide_icons.dart';
+import 'package:slicing_ui_almair_03/components/bottomNavBtn.dart';
 import 'package:slicing_ui_almair_03/components/cardMenu.dart';
 import 'package:slicing_ui_almair_03/components/cardTrip.dart';
 import 'package:slicing_ui_almair_03/components/essentialButton.dart';
@@ -84,7 +85,7 @@ class HomePage extends StatelessWidget {
                           color1: Colors.red,
                           color2: Colors.red.shade900,
                           color1opacity: 200,
-                          label: "Wowi",
+                          label: "Whoosh",
                         ),
                       ],
                     ),
@@ -182,6 +183,48 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ],
+        ),
+      ),
+      bottomNavigationBar: SizedBox(
+        height: 70,
+        child: BottomAppBar(
+          color: Colors.white,
+          padding: EdgeInsets.symmetric(horizontal: 24, vertical: 10),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              BtnNav(
+                colorLabel: Colors.black,
+                color: Colors.blueAccent.shade700,
+                icon: LucideIcons.house400,
+                label: "Beranda",
+              ),
+              BtnNav(
+                colorLabel: Colors.grey.shade600,
+                color: Colors.grey.shade600,
+                icon: LucideIcons.trainFront400,
+                label: "Kereta",
+              ),
+              BtnNav(
+                colorLabel: Colors.grey.shade600,
+                color: Colors.grey.shade600,
+                icon: LucideIcons.ticket400,
+                label: "Tiket Saya",
+              ),
+              BtnNav(
+                colorLabel: Colors.grey.shade600,
+                color: Colors.grey.shade600,
+                icon: Icons.discount_outlined,
+                label: "Promo",
+              ),
+              BtnNav(
+                colorLabel: Colors.grey.shade600,
+                color: Colors.grey.shade600,
+                icon: LucideIcons.user400,
+                label: "Akun",
+              ),
+            ],
+          ),
         ),
       ),
     );
