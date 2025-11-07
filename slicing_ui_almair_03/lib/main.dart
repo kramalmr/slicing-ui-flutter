@@ -13,7 +13,7 @@ class MainApp extends StatelessWidget {
     return const MaterialApp(
       title: "Slicing 03",
       debugShowCheckedModeBanner: false,
-      home: HomePage()
+      home: HomePage(),
     );
   }
 }
