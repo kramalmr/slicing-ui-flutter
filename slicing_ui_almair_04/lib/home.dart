@@ -54,42 +54,221 @@ class HomePage extends StatelessWidget {
           ),
         ],
       ),
-      body: Column(
-        children: [
-          SizedBox(height: 20),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24),
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+      body: SingleChildScrollView(
+        child: Column(
+          children: [
+            Padding(
+              padding: EdgeInsets.all(24),
+              child: Container(
+                padding: EdgeInsets.symmetric(horizontal: 24, vertical: 16),
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(25),
+                ),
+                child: Column(
+                  spacing: 12,
+                  children: [
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceAround,
+                      children: [
+                        Column(
+                          spacing: 5,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {},
+
+                              style: ElevatedButton.styleFrom(
+                                elevation: 0,
+                                fixedSize: Size(40, 55),
+                                padding: EdgeInsets.all(0),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                              ),
+                              child: Icon(Icons.local_drink_sharp, size: 30),
+                            ),
+                            Text(
+                              "Minuman",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: Colors.deepPurple,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          spacing: 5,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {},
+
+                              style: ElevatedButton.styleFrom(
+                                elevation: 0,
+                                fixedSize: Size(40, 55),
+                                padding: EdgeInsets.all(0),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                              ),
+                              child: Icon(Icons.restaurant, size: 30),
+                            ),
+                            Text(
+                              "Makanan",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: Colors.deepPurple,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          spacing: 5,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {},
+
+                              style: ElevatedButton.styleFrom(
+                                elevation: 0,
+                                fixedSize: Size(40, 55),
+                                padding: EdgeInsets.all(0),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                              ),
+                              child: Icon(Icons.fastfood, size: 30),
+                            ),
+                            Text(
+                              "Fast Food",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: Colors.deepPurple,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          spacing: 5,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {},
+
+                              style: ElevatedButton.styleFrom(
+                                elevation: 0,
+                                fixedSize: Size(40, 55),
+                                padding: EdgeInsets.all(0),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                              ),
+                              child: Icon(Icons.apple, size: 30),
+                            ),
+                            Text(
+                              "Buah",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: Colors.deepPurple,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Column(
+                          spacing: 5,
+                          children: [
+                            ElevatedButton(
+                              onPressed: () {},
+
+                              style: ElevatedButton.styleFrom(
+                                elevation: 0,
+                                fixedSize: Size(40, 55),
+                                padding: EdgeInsets.all(0),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
+                              ),
+                              child: Icon(Icons.local_restaurant, size: 30),
+                            ),
+                            Text(
+                              "Restoran",
+                              style: TextStyle(
+                                fontWeight: FontWeight.w600,
+                                color: Colors.deepPurple,
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                    Divider(color: Colors.deepPurple),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Row(
+                          spacing: 10,
+                          children: [
+                            Icon(
+                              Icons.wallet,
+                              size: 40,
+                              color: Colors.deepPurple.shade400,
+                            ),
+                            Text(
+                              "Rp. 500.000",
+                              style: TextStyle(
+                                fontSize: 24,
+                                color: Colors.deepPurple,
+                                fontWeight: FontWeight.w600,
+                              ),
+                            ),
+                          ],
+                        ),
+                        Text(
+                          "0 Coins",
+                          style: TextStyle(
+                            fontSize: 24,
+                            color: Colors.deepPurple,
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ],
+                ),
+              ),
+            ),
+            Container(
+              padding: EdgeInsets.all(24),
               width: double.infinity,
               decoration: BoxDecoration(
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(25),
+                borderRadius: BorderRadius.only(
+                  topRight: Radius.circular(25),
+                  topLeft: Radius.circular(25),
+                ),
               ),
               child: Column(
-                spacing: 12,
+                spacing: 14,
+                mainAxisAlignment: MainAxisAlignment.start,
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Row(
                     mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
                       Column(
-                        spacing: 5,
+                        spacing: 2,
                         children: [
                           ElevatedButton(
                             onPressed: () {},
 
                             style: ElevatedButton.styleFrom(
                               elevation: 0,
-                              fixedSize: Size(50, 50),
+                              fixedSize: Size(70, 85),
                               padding: EdgeInsets.all(0),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15),
-                              ),
+                              shape: CircleBorder(),
                             ),
-                            child: Icon(Icons.local_drink_sharp, size: 30),
+                            child: Icon(Icons.send_outlined, size: 40),
                           ),
                           Text(
-                            "Minuman",
+                            "Transfer",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               color: Colors.deepPurple,
@@ -98,23 +277,24 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                       Column(
-                        spacing: 5,
+                        spacing: 2,
                         children: [
                           ElevatedButton(
                             onPressed: () {},
 
                             style: ElevatedButton.styleFrom(
                               elevation: 0,
-                              fixedSize: Size(50, 50),
+                              fixedSize: Size(70, 85),
                               padding: EdgeInsets.all(0),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15),
-                              ),
+                              shape: CircleBorder(),
                             ),
-                            child: Icon(Icons.restaurant, size: 30),
+                            child: Icon(
+                              Icons.account_balance_wallet_outlined,
+                              size: 40,
+                            ),
                           ),
                           Text(
-                            "Makanan",
+                            "Top up",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               color: Colors.deepPurple,
@@ -123,23 +303,21 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                       Column(
-                        spacing: 5,
+                        spacing: 2,
                         children: [
                           ElevatedButton(
                             onPressed: () {},
 
                             style: ElevatedButton.styleFrom(
                               elevation: 0,
-                              fixedSize: Size(50, 50),
+                              fixedSize: Size(70, 85),
                               padding: EdgeInsets.all(0),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15),
-                              ),
+                              shape: CircleBorder(),
                             ),
-                            child: Icon(Icons.fastfood, size: 30),
+                            child: Icon(Icons.attach_money, size: 40),
                           ),
                           Text(
-                            "Fast Food",
+                            "Tarik tunai",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               color: Colors.deepPurple,
@@ -148,48 +326,24 @@ class HomePage extends StatelessWidget {
                         ],
                       ),
                       Column(
-                        spacing: 5,
+                        spacing: 2,
                         children: [
                           ElevatedButton(
                             onPressed: () {},
 
                             style: ElevatedButton.styleFrom(
                               elevation: 0,
-                              fixedSize: Size(50, 50),
+                              fixedSize: Size(70, 85),
                               padding: EdgeInsets.all(0),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15),
-                              ),
+                              shape: CircleBorder(),
                             ),
-                            child: Icon(Icons.apple, size: 30),
+                            child: Icon(
+                              Icons.currency_exchange_rounded,
+                              size: 40,
+                            ),
                           ),
                           Text(
-                            "Buah",
-                            style: TextStyle(
-                              fontWeight: FontWeight.w600,
-                              color: Colors.deepPurple,
-                            ),
-                          ),
-                        ],
-                      ),
-                      Column(
-                        spacing: 5,
-                        children: [
-                          ElevatedButton(
-                            onPressed: () {},
-
-                            style: ElevatedButton.styleFrom(
-                              elevation: 0,
-                              fixedSize: Size(50, 50),
-                              padding: EdgeInsets.all(0),
-                              shape: RoundedRectangleBorder(
-                                borderRadius: BorderRadius.circular(15),
-                              ),
-                            ),
-                            child: Icon(Icons.local_restaurant, size: 30),
-                          ),
-                          Text(
-                            "Restoran",
+                            "Konfersi",
                             style: TextStyle(
                               fontWeight: FontWeight.w600,
                               color: Colors.deepPurple,
@@ -199,43 +353,201 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Divider(color: Colors.deepPurple),
                   Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    mainAxisAlignment: MainAxisAlignment.spaceAround,
                     children: [
-                      Row(
-                        spacing: 10,
+                      Column(
+                        spacing: 2,
                         children: [
-                          Icon(
-                            Icons.wallet,
-                            size: 40,
-                            color: Colors.deepPurple.shade400,
+                          ElevatedButton(
+                            onPressed: () {},
+
+                            style: ElevatedButton.styleFrom(
+                              elevation: 0,
+                              fixedSize: Size(70, 85),
+                              padding: EdgeInsets.all(0),
+                              shape: CircleBorder(),
+                            ),
+                            child: Icon(Icons.wifi, size: 40),
                           ),
                           Text(
-                            "Rp. 500.000",
+                            "Kuota",
                             style: TextStyle(
-                              fontSize: 24,
-                              color: Colors.deepPurple,
                               fontWeight: FontWeight.w600,
+                              color: Colors.deepPurple,
                             ),
                           ),
                         ],
                       ),
-                      Text(
-                        "0 Coins",
-                        style: TextStyle(
-                          fontSize: 24,
-                          color: Colors.deepPurple,
-                          fontWeight: FontWeight.w500,
-                        ),
+                      Column(
+                        spacing: 2,
+                        children: [
+                          ElevatedButton(
+                            onPressed: () {},
+
+                            style: ElevatedButton.styleFrom(
+                              elevation: 0,
+                              fixedSize: Size(70, 85),
+                              padding: EdgeInsets.all(0),
+                              shape: CircleBorder(),
+                            ),
+                            child: Icon(Icons.radar, size: 40),
+                          ),
+                          Text(
+                            "Pulsa",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              color: Colors.deepPurple,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        spacing: 2,
+                        children: [
+                          ElevatedButton(
+                            onPressed: () {},
+
+                            style: ElevatedButton.styleFrom(
+                              elevation: 0,
+                              fixedSize: Size(70, 85),
+                              padding: EdgeInsets.all(0),
+                              shape: CircleBorder(),
+                            ),
+                            child: Icon(Icons.shopping_cart_outlined, size: 40),
+                          ),
+                          Text(
+                            "Ecommerce",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              color: Colors.deepPurple,
+                            ),
+                          ),
+                        ],
+                      ),
+                      Column(
+                        spacing: 2,
+                        children: [
+                          ElevatedButton(
+                            onPressed: () {},
+
+                            style: ElevatedButton.styleFrom(
+                              elevation: 0,
+                              fixedSize: Size(70, 85),
+                              padding: EdgeInsets.all(0),
+                              shape: CircleBorder(),
+                            ),
+                            child: Icon(Icons.savings_outlined, size: 40),
+                          ),
+                          Text(
+                            "Nabung",
+                            style: TextStyle(
+                              fontWeight: FontWeight.w600,
+                              color: Colors.deepPurple,
+                            ),
+                          ),
+                        ],
                       ),
                     ],
+                  ),
+                  SizedBox(height: 10),
+                  Text(
+                    "Super Deal hari ini!",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.deepPurple,
+                    ),
+                  ),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    child: Row(
+                      spacing: 12,
+                      children: [
+                        Container(
+                          width: 220,
+                          height: 130,
+                          padding: EdgeInsets.symmetric(horizontal: 10),
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurple.shade100,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Gratis Ongkir sampai 50%",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Text("Khusus grab & Shopee"),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 220,
+                          height: 130,
+                          padding: EdgeInsets.symmetric(horizontal: 10),
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurple.shade200,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Buy 1 get 1",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Text("Khusus cemilan kekinian"),
+                              Text(
+                                "*Syarat & ketentuan berlaku",
+                                style: TextStyle(fontSize: 12),
+                              ),
+                            ],
+                          ),
+                        ),
+                        Container(
+                          width: 220,
+                          height: 130,
+                          padding: EdgeInsets.symmetric(horizontal: 10),
+                          decoration: BoxDecoration(
+                            color: Colors.deepPurple.shade300,
+                            borderRadius: BorderRadius.circular(20),
+                          ),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: [
+                              Text(
+                                "Turki ganteng abiezz",
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  fontSize: 24,
+                                  fontWeight: FontWeight.w600,
+                                ),
+                              ),
+                              Text("ptp bujar 2029"),
+                            ],
+                          ),
+                        ),
+                      ],
+                    ),
                   ),
                 ],
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
