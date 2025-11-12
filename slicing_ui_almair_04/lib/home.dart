@@ -246,7 +246,7 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               child: Column(
-                spacing: 14,
+                // spacing: 14,
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -450,7 +450,7 @@ class HomePage extends StatelessWidget {
                       ),
                     ],
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 30),
                   Text(
                     "Super Deal hari ini!",
                     style: TextStyle(
@@ -459,6 +459,7 @@ class HomePage extends StatelessWidget {
                       color: Colors.deepPurple,
                     ),
                   ),
+                  SizedBox(height: 10),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
@@ -543,7 +544,7 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 30),
                   Text(
                     "Nabung & Investment",
                     style: TextStyle(
@@ -552,6 +553,7 @@ class HomePage extends StatelessWidget {
                       color: Colors.deepPurple,
                     ),
                   ),
+                  SizedBox(height: 10),
                   SingleChildScrollView(
                     scrollDirection: Axis.horizontal,
                     child: Row(
@@ -593,10 +595,332 @@ class HomePage extends StatelessWidget {
                       ],
                     ),
                   ),
+                  SizedBox(height: 30),
+                  Text(
+                    "Jangan lewatkan!",
+                    style: TextStyle(
+                      fontSize: 18,
+                      fontWeight: FontWeight.w600,
+                      color: Colors.deepPurple,
+                    ),
+                  ),
+                  Text("Belanja hemat, dapat cashback lagi!"),
+                  SizedBox(height: 10),
+                  SingleChildScrollView(
+                    scrollDirection: Axis.horizontal,
+                    clipBehavior: Clip.none,
+                    child: Row(
+                      spacing: 12,
+                      children: [
+                        Stack(
+                          children: [
+                            Container(
+                              width: 125,
+                              height: 160,
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: BoxBorder.all(
+                                  color: Colors.deepPurple.shade400,
+                                  width: 2,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 40,
+                                    color: Colors.deepPurple.shade100,
+
+                                    offset: Offset(0, 30),
+                                  ),
+                                ],
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Center(
+                                child: Image.asset("assets/shop1.png"),
+                              ),
+                            ),
+                            Positioned(
+                              child: Container(
+                                width: 70,
+                                height: 25,
+                                decoration: BoxDecoration(
+                                  color: Colors.deepPurple.shade400,
+                                  borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(25),
+                                    bottomRight: Radius.circular(25),
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "30% Off",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Stack(
+                          children: [
+                            Container(
+                              width: 125,
+                              height: 160,
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: BoxBorder.all(
+                                  color: Colors.deepPurple.shade300,
+                                  width: 2,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 40,
+                                    color: Colors.deepPurple.shade100,
+
+                                    offset: Offset(0, 30),
+                                  ),
+                                ],
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Center(
+                                child: Image.asset("assets/shop2.png"),
+                              ),
+                            ),
+                            Positioned(
+                              child: Container(
+                                width: 70,
+                                height: 25,
+                                decoration: BoxDecoration(
+                                  color: Colors.deepPurple.shade300,
+                                  borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(25),
+                                    bottomRight: Radius.circular(25),
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "50% Off",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Stack(
+                          children: [
+                            Container(
+                              width: 125,
+                              height: 160,
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: BoxBorder.all(
+                                  color: Colors.deepPurple.shade200,
+                                  width: 2,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 40,
+                                    color: Colors.deepPurple.shade100,
+
+                                    offset: Offset(0, 30),
+                                  ),
+                                ],
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Center(
+                                child: Image.asset("assets/shop3.png"),
+                              ),
+                            ),
+                            Positioned(
+                              child: Container(
+                                width: 70,
+                                height: 25,
+                                decoration: BoxDecoration(
+                                  color: Colors.deepPurple.shade200,
+                                  borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(25),
+                                    bottomRight: Radius.circular(25),
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "35% Off",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                        Stack(
+                          children: [
+                            Container(
+                              width: 125,
+                              height: 160,
+                              padding: EdgeInsets.symmetric(horizontal: 10),
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                border: BoxBorder.all(
+                                  color: Colors.deepPurple.shade100,
+                                  width: 2,
+                                ),
+                                boxShadow: [
+                                  BoxShadow(
+                                    blurRadius: 40,
+                                    color: Colors.deepPurple.shade100,
+
+                                    offset: Offset(0, 30),
+                                  ),
+                                ],
+                                borderRadius: BorderRadius.circular(20),
+                              ),
+                              child: Center(
+                                child: Image.asset("assets/shop4.png"),
+                              ),
+                            ),
+                            Positioned(
+                              child: Container(
+                                width: 70,
+                                height: 25,
+                                decoration: BoxDecoration(
+                                  color: Colors.deepPurple.shade100,
+                                  borderRadius: BorderRadius.only(
+                                    topRight: Radius.circular(25),
+                                    bottomRight: Radius.circular(25),
+                                  ),
+                                ),
+                                child: Center(
+                                  child: Text(
+                                    "40% Off",
+                                    style: TextStyle(
+                                      fontSize: 12,
+                                      fontWeight: FontWeight.w600,
+                                      color: Colors.white,
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ],
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 30),
+                  Container(
+                    width: double.infinity,
+                    height: 190,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/banner4.png"),
+                        fit: BoxFit.cover,
+                        alignment: Alignment.centerLeft,
+                      ),
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //     color: Colors.deepPurple.shade200,
+                      //     blurRadius: 10,
+                      //   ),
+                      // ],
+                      border: Border.all(color: Colors.deepPurple.shade300),
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                  ),
+                  SizedBox(height: 30),
+                  Container(
+                    width: double.infinity,
+                    height: 190,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/banner5.png"),
+                        fit: BoxFit.cover,
+                      ),
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //     color: Colors.deepPurple.shade200,
+                      //     blurRadius: 10,
+                      //   ),
+                      // ],
+                      border: Border.all(color: Colors.deepPurple.shade300),
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                  ),
+                  SizedBox(height: 30),
+                  Container(
+                    width: double.infinity,
+                    height: 190,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: AssetImage("assets/banner6.png"),
+                        alignment: Alignment.centerLeft,
+                        fit: BoxFit.cover,
+                      ),
+                      // boxShadow: [
+                      //   BoxShadow(
+                      //     color: Colors.deepPurple.shade200,
+                      //     blurRadius: 10,
+                      //   ),
+                      // ],
+                      border: Border.all(color: Colors.deepPurple.shade300),
+                      borderRadius: BorderRadius.circular(25),
+                    ),
+                  ),
                 ],
               ),
             ),
           ],
+        ),
+      ),
+      bottomNavigationBar: SizedBox(
+        height: 80,
+        child: BottomAppBar(
+          color: Colors.white,
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              IconButton(
+                onPressed: () {},
+                icon: Icon(Icons.home, color: Colors.deepPurple, size: 35),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.discount,
+                  color: Colors.deepPurple.shade100,
+                  size: 26,
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.messenger_sharp,
+                  color: Colors.deepPurple.shade100,
+                  size: 28,
+                ),
+              ),
+              IconButton(
+                onPressed: () {},
+                icon: Icon(
+                  Icons.shopping_bag,
+                  color: Colors.deepPurple.shade100,
+                  size: 30,
+                ),
+              ),
+            ],
+          ),
         ),
       ),
     );
