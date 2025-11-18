@@ -884,45 +884,45 @@ class HomePage extends StatelessWidget {
           ],
         ),
       ),
-      bottomNavigationBar: SizedBox(
-        height: 80,
-        child: BottomAppBar(
-          color: Colors.white,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            children: [
-              IconButton(
-                onPressed: () {},
-                icon: Icon(Icons.home, color: Colors.deepPurple, size: 35),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.discount,
-                  color: Colors.deepPurple.shade100,
-                  size: 26,
-                ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.messenger_sharp,
-                  color: Colors.deepPurple.shade100,
-                  size: 28,
-                ),
-              ),
-              IconButton(
-                onPressed: () {},
-                icon: Icon(
-                  Icons.shopping_bag,
-                  color: Colors.deepPurple.shade100,
-                  size: 30,
-                ),
-              ),
-            ],
-          ),
-        ),
-      ),
+      // bottomNavigationBar: SizedBox(
+      //   height: 80,
+      //   child: BottomAppBar(
+      //     color: Colors.white,
+      //     child: Row(
+      //       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      //       children: [
+      //         IconButton(
+      //           onPressed: () {},
+      //           icon: Icon(Icons.home, color: Colors.deepPurple, size: 35),
+      //         ),
+      //         IconButton(
+      //           onPressed: () {},
+      //           icon: Icon(
+      //             Icons.discount,
+      //             color: Colors.deepPurple.shade100,
+      //             size: 26,
+      //           ),
+      //         ),
+      //         IconButton(
+      //           onPressed: () {},
+      //           icon: Icon(
+      //             Icons.messenger_sharp,
+      //             color: Colors.deepPurple.shade100,
+      //             size: 28,
+      //           ),
+      //         ),
+      //         IconButton(
+      //           onPressed: () {},
+      //           icon: Icon(
+      //             Icons.shopping_bag,
+      //             color: Colors.deepPurple.shade100,
+      //             size: 30,
+      //           ),
+      //         ),
+      //       ],
+      //     ),
+      //   ),
+      // ),
     );
   }
 }

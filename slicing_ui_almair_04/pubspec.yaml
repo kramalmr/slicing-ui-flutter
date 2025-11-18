@@ -9,6 +9,9 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_native_splash: ^2.4.7
+  google_fonts: ^6.3.2
+  material_symbols_icons: ^4.2874.0
 
 dev_dependencies:
   flutter_test:
@@ -25,7 +28,21 @@ flutter:
     - "assets/banner4.png"
     - "assets/banner5.png"
     - "assets/banner6.png"
+    - "assets/banner7.png"
+    - "assets/banner8.png"
+    - "assets/banner9.png"
+    - "assets/banner10.png"
+    - "assets/banner11.png"
+    - "assets/banner12.png"
     - "assets/shop1.png"
     - "assets/shop2.png"
     - "assets/shop3.png"
     - "assets/shop4.png"
+    - "assets/makanan.png"
+    - "assets/pfp.jpg"
+    - "assets/splashicon.png"
+
+flutter_native_splash:
+  image: assets/splashicon.png
+  color: "#673AB7"
+  fullscreen: true
