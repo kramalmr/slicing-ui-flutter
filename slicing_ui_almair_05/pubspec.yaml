@@ -1,6 +1,6 @@
 name: silicing_ui_almair_05
 description: "A new Flutter project."
-publish_to: 'none'
+publish_to: "none"
 version: 0.1.0
 
 environment:
@@ -21,3 +21,11 @@ flutter:
 
   assets:
     - "assets/pfp.jpg"
+    - "assets/card-scan.png "
+    - "assets/dollar.png"
+    - "assets/favorite.png"
+    - "assets/pfp1.png"
+    - "assets/product.png"
+    - "assets/stamp.png"
+    - "assets/star.png"
+    - "assets/voucher.png"
