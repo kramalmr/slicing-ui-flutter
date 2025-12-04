@@ -35,7 +35,7 @@ class Latihan extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.blue,
           borderRadius: BorderRadius.circular(25),
-        ),
+        ),  
       ),
     );
   }

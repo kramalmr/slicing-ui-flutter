@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_lucide/flutter_lucide.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:silicing_ui_almair_05/components/adbanner.dart';
 import 'package:silicing_ui_almair_05/components/appbar.dart';
+import 'package:silicing_ui_almair_05/components/cardview.dart';
+import 'package:silicing_ui_almair_05/components/flashsale.dart';
+import 'package:silicing_ui_almair_05/components/promo.dart';
 import 'package:silicing_ui_almair_05/decorations/set.dart';
 
 class HomePage extends StatelessWidget {
@@ -78,8 +83,21 @@ class HomePage extends StatelessWidget {
     //   ),
     // );
     return Scaffold(
+      backgroundColor: ClassName.color5,
       body: SafeArea(
-        child: SingleChildScrollView(child: Column(children: [AppBarHome()])),
+        child: SingleChildScrollView(
+          child: Column(
+            children: [
+              AppBarHome(),
+              SizedBox(height: 80),
+              AdBanner(),
+              SizedBox(height: 20),
+              PromoSection(),
+              SizedBox(height: 20),
+              FlashSaleSection(),
+            ],
+          ),
+        ),
       ),
     );
   }

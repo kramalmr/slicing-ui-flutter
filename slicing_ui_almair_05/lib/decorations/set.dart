@@ -28,8 +28,14 @@ class ClassName {
     fontWeight: FontWeight.w600,
     color: color5,
   );
-  static final TextStyle style5 = GoogleFonts.openSans(fontSize: 12);
-  static final TextStyle style6 = GoogleFonts.openSans(fontSize: 8);
+  static final TextStyle style5 = GoogleFonts.openSans(
+    fontSize: 12,
+    color: color5,
+  );
+  static final TextStyle style6 = GoogleFonts.openSans(
+    fontSize: 8,
+    color: color5,
+  );
 
   static final Icon icon1 = Icon(Icons.chat, color: Colors.white, size: 14);
 }

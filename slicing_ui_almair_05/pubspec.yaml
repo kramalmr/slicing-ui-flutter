@@ -9,6 +9,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  flutter_lucide: ^1.7.0
   google_fonts: ^6.3.2
 
 dev_dependencies:
@@ -29,3 +30,7 @@ flutter:
     - "assets/stamp.png"
     - "assets/star.png"
     - "assets/voucher.png"
+    - "assets/banner1.png"
+    - "assets/banner2.png"
+    - "assets/banner3.png"
+    - "assets/burger.jpg"
