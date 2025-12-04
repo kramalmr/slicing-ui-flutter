@@ -27,7 +27,32 @@ class FlashSaleSection extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             child: Row(
               spacing: 12,
-              children: [FlashSaleCard(), FlashSaleCard(), FlashSaleCard()],
+              children: [
+                FlashSaleCard(
+                  label1: "Burger Instan 500 gram",
+                  label2: "Burger Instan merek burjegger 500 gram",
+                  harga: "- Rp. 35.000,-",
+                  gambar: "assets/burger.png",
+                ),
+                FlashSaleCard(
+                  label1: "Burger Instan 500 gram",
+                  label2: "Burger Instan merek burjegger 500 gram",
+                  harga: "- Rp. 35.000,-",
+                  gambar: "assets/burger.png",
+                ),
+                FlashSaleCard(
+                  label1: "Burger Instan 500 gram",
+                  label2: "Burger Instan merek burjegger 500 gram",
+                  harga: "- Rp. 35.000,-",
+                  gambar: "assets/burger.png",
+                ),
+                FlashSaleCard(
+                  label1: "Burger Instan 500 gram",
+                  label2: "Burger Instan merek burjegger 500 gram",
+                  harga: "- Rp. 35.000,-",
+                  gambar: "assets/burger.png",
+                ),
+              ],
             ),
           ),
         ],
@@ -37,14 +62,24 @@ class FlashSaleSection extends StatelessWidget {
 }
 
 class FlashSaleCard extends StatelessWidget {
-  const FlashSaleCard({super.key});
+  final String label1;
+  final String label2;
+  final String harga;
+  final String gambar;
+  const FlashSaleCard({
+    super.key,
+    required this.label1,
+    required this.label2,
+    required this.harga,
+    required this.gambar,
+  });
 
   @override
   Widget build(BuildContext context) {
     return Container(
       width: 180,
       height: 250,
-      padding: EdgeInsets.all(10),
+      padding: EdgeInsets.fromLTRB(10, 0, 10, 10),
       decoration: BoxDecoration(
         color: Colors.white,
         borderRadius: BorderRadius.circular(12),
@@ -55,42 +90,36 @@ class FlashSaleCard extends StatelessWidget {
         children: [
           Container(
             width: double.infinity,
-            height: 130,
+            height: 150,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(8),
               image: DecorationImage(
-                image: AssetImage("assets/burger.jpg"),
+                image: AssetImage(gambar),
                 fit: BoxFit.cover,
               ),
             ),
             child: Align(
               alignment: Alignment.bottomLeft,
               child: Container(
-                width: 140,
-                height: 25,
-                padding: EdgeInsets.all(5),
+                width: 130,
+                height: 20,
+                padding: EdgeInsets.fromLTRB(10, 2, 0, 2),
                 decoration: BoxDecoration(
                   color: ClassName.color1,
                   borderRadius: BorderRadius.only(
-                    topRight: Radius.circular(20),
+                    topRight: Radius.circular(10),
                   ),
                 ),
                 child: Text(
-                  "Burger Instan 500 Gram",
-                  style: GoogleFonts.openSans(
-                    fontSize: 10,
-                    color: Colors.white,
-                  ),
+                  label1,
+                  style: GoogleFonts.openSans(fontSize: 9, color: Colors.white),
                 ),
               ),
             ),
           ),
+          Text(label2, style: GoogleFonts.openSans(fontSize: 10)),
           Text(
-            "Burger Instan merek burjger 500 gram",
-            style: GoogleFonts.openSans(fontSize: 12),
-          ),
-          Text(
-            "Rp. 35.000,-",
+            harga,
             style: GoogleFonts.openSans(
               fontSize: 20,
               fontWeight: FontWeight.w600,
