@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:silicing_ui_almair_05/navBottom.dart';
 import 'package:silicing_ui_almair_05/pages/home.dart';
 
 void main() {
@@ -11,7 +12,7 @@ class MainApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(),
+      home: NavigasiBottom(),
       debugShowCheckedModeBanner: false,
     );
   }
@@ -35,7 +36,7 @@ class Latihan extends StatelessWidget {
         decoration: BoxDecoration(
           color: Colors.blue,
           borderRadius: BorderRadius.circular(25),
-        ),  
+        ),
       ),
     );
   }
